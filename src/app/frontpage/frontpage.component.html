@@ -1,0 +1,542 @@
+<nav class="navbar navbar-expand-lg " >
+    <div class="container-fluid">
+        <img src="./../../assets/great_learning_logo_png.png" style="height:50px;width:90px;" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex" role="search">
+          <input class="form-control ms-5" style="font-size: 14px;" type="search" placeholder="try data science" aria-label="Search">
+        </form>
+                <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a routerLink="/degree" class="nav-link active me-3" aria-current="page" style="font-size:14px"> <img src="./../../assets/crown logo.jpeg" style="height:25px;width:30px;" alt="">  Degree & Certificate programs</a>
+          </li>
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-white" style="font-size: 14px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ Login
+</button>
+
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body" style="height:450px; width:100%;">
+        <div class="row">
+          <div class="col-6">
+            <img src="./../../assets/modal1.png" style="width:100%; height:500px;" alt="">
+            <h2 id="heading2">100+ Free courses </h2>
+          </div>
+          <div class="col-6">
+
+
+<form [formGroup]="loginform" >
+  <h3 style="color: black; text-align: center;">login</h3>
+  <div class="login-side">
+    <h6><img src="./../../assets/google.png" style="width: 40px; height:30px; margin: 5px;border-radius: 10px;" alt=""></h6>
+    <p style="font-size: 12px;display:inline-block;color: white;margin-top: 12px;">CONTINUE WITH GOOGLE</p>
+  </div>
+  <pre style="text-align: center; margin-top: 15px;">-----    Or   ------</pre>
+  
+  <input type="email" name="text1" formControlName="mail" class="input-border" placeholder="Email address">
+  <div *ngIf="this.loginform.get('mail')?.errors &&  this.loginform.get('mail')?.touched"><p class="text-danger">Invalid email address</p></div>
+  <input type="password" formControlName="psd" name="password1"   class="input-border" style="margin-top:15px;" placeholder="Password">
+  <div *ngIf="this.loginform.get('psd')?.errors &&  this.loginform.get('psd')?.touched"><p class="text-danger">Invalid Password</p></div>
+
+  <div class="login-sides" style="margin-top: 15px;">
+  <div class="text-center">
+    <button class="btn btn-primary" (click)="login()" >CONTINUE</button>
+  </div>
+  
+  <p style="text-align: center;font-size: 12px;color:  #196ae5;">FORGOT PASSWORD?</p>
+  <p style="font-size: 12px;text-align: center;">Don't have an account? <a href="" style="text-decoration: none;"> &nbsp;Sign up</a></p>
+  </div>
+
+</form>        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<button class="btn btn-primary" >Sign up</button>
+
+   </ul>
+
+
+
+
+
+      </div>
+    </div>
+  </nav>
+
+<section class="bg-light">
+<div class="container">
+    <div class="row" >
+      <div class="col-lg-6 col-md-6" id=" coloumn1">
+  <p class="p1">GREAT LEARNING ACADEMY</p>
+  <h1 style="margin-left: 30%;">Crack dream jobs <br> with top rated <span style="color: orange;">free</span> <br> certificate courses</h1>
+      <p class="p2">Upskilling for Professionals from World’s top Universities</p>
+</div>
+      <div class="col-lg-6  col-md-6">
+        <img src="./../../assets/side images.webp" alt="" style="width: 100%;">
+      </div>
+    </div>
+
+    <div class="banner">
+      <ul class="banner-list">
+        <li class="banner-text_item ticker_1">
+          <p class="banner_add-text" style="font-weight: bold;" > Jobs for freshers & working professionals</p>
+        </li>
+        <!-- <li class="banner-text_item ticker_2"><p class="banner_add-text">60 lakh+ learners</p></li>
+        <li class="banner-text_item ticker_3"><p class="banner_add-text">100+ courses</p></li>
+        <li class="banner-text_item ticker_4"><p class="banner_add-text">Courses also in hindi</p></li> -->
+      </ul>
+    </div>
+    <button id="btn1" class="btn btn-primary p-2" >START FOR FREE</button>
+</div>
+
+</section>
+
+<div class="container">
+  
+    <h3 class="heading1">Great Learning Recommends</h3>
+    <div class="row" style="margin-left: 10%;">
+      <div class="col-lg-4 mt-3">
+        <div class="card"  style="width: 15rem;">
+          <img src="./../../assets/course-69-jp (4).jpg" style="height:150px; " class="card-img-top" alt="...">
+          <div class="card-body">
+            <img style="height: 12px; width:12px;"  src="./../../assets/progress level.png" alt="">
+<p style="display: inline-block;font-size: 12px;">Beginner</p>
+<i class="fa-regular fa-clock text-secondary " style="margin-left:40%; font-size: 10px;"></i>
+<p style="color: gray; font-size:11px; display: inline-block;">&nbsp;2.0 Hrs</p>
+<h6>Java Programming</h6>
+<i class="fa-solid fa-star text-warning" style="font-size: 10px;"></i>
+<p style="font-size:12px ;display: inline-block; color: gray; margin-top:-10%;">4.4 • 4.2 L+ Learners</p> <br>
+<a href="" style="text-decoration: none; font-size: 14px;">Free</a> 
+<p style="font-size:14px; color:red; display: inline-block; margin-left: 45%;">Enroll now</p>
+<i class="fa-solid fa-chevron-right text-primary ms-1"></i>
+</div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <div class="card" style="width: 15rem;">
+          <img src="./../../assets/Html.jpeg" style="height: 125px;" class="card-img-top" alt="...">
+          
+          <div class="card-body">
+            <img style="height: 12px; width:12px;"  src="./../../assets/progress level.png" alt="">
+            <p style="display: inline-block;font-size: 12px;">Beginner</p>
+            <i class="fa-regular fa-clock text-secondary " style="margin-left:40%; font-size: 10px;"></i>
+<p style="color: gray; font-size:11px; display: inline-block;">&nbsp;2.0 Hrs</p>
+<h6>Front End Development-HTML</h6>
+<i class="fa-solid fa-star text-warning" style="font-size: 10px;"></i>
+
+<p style="font-size:12px ;display: inline-block; color: gray; margin-top:-10%;">4.5 • 2 L+ Learners</p> <br>
+<a href="" style="text-decoration: none; font-size: 14px;">Free</a> 
+<p style="font-size:14px; color:red; display: inline-block; margin-left: 45%;">Enroll now</p>
+<i class="fa-solid fa-chevron-right text-primary ms-1"></i>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <div class="card" style="width: 15rem;">
+          <img src="./../../assets/course-71-excel.png" style="height: 140px;"  class="card-img-top" alt="...">
+          <div class="card-body">
+            <img style="height: 12px; width:12px;"  src="./../../assets/progress level.png" alt="">
+            <p style="display: inline-block;font-size: 12px;">Beginner</p>
+            <i class="fa-regular fa-clock text-secondary " style="margin-left:40%; font-size: 10px;"></i>
+<p style="color: gray; font-size:11px; display: inline-block;">&nbsp;4.5 Hrs</p>
+<h6>Excel for beginners</h6>
+<i class="fa-solid fa-star text-warning" style="font-size: 10px;"></i>
+
+<p style="font-size:12px ;display: inline-block; color: gray; margin-top:-10%;">4.5 • 2 L+ Learners</p> <br>
+<a href="" style="text-decoration: none; font-size: 14px;">Free</a> 
+<p style="font-size:12px; color:red; display: inline-block; margin-left: 45%;">Enroll now</p>
+<i class="fa-solid fa-chevron-right text-primary ms-1"></i>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <div class="card" style="width: 15rem;">
+          <img src="./../../assets/digital.jpg" style="height: 140px;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <img style="height: 12px; width:12px;"  src="./../../assets/progress level.png" alt="">
+            <p style="display: inline-block;font-size: 12px;">Beginner</p>
+            <i class="fa-regular fa-clock text-secondary " style="margin-left:40%; font-size: 10px;"></i>
+<p style="color: gray; font-size:11px; display: inline-block;">&nbsp;4.5 Hrs</p>
+<h6>Intro to Digital Marketing</h6>
+<i class="fa-solid fa-star text-warning" style="font-size: 10px;"></i>
+
+<p style="font-size:12px ;display: inline-block; color: gray; margin-top:-10%;">4.4 • 4.4 L+ Learners</p> <br>
+<a href="" style="text-decoration: none; font-size: 14px;">Free</a> 
+<p style="font-size:12px; color:red; display: inline-block; margin-left: 45%;">Enroll now</p>
+<i class="fa-solid fa-chevron-right text-primary ms-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <div class="card" style="width: 15rem;">
+          <img src="./../../assets/python.png" style="height: 140px;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <img style="height: 12px; width:12px;"  src="./../../assets/progress level.png" alt="">
+            <p style="display: inline-block;font-size: 12px;">Beginner</p>
+            <i class="fa-regular fa-clock text-secondary " style="margin-left:40%; font-size: 10px;"></i>
+<p style="color: gray; font-size:11px; display: inline-block;">&nbsp;4.5 Hrs</p>
+<h6>Python for beginners</h6>
+<i class="fa-solid fa-star text-warning" style="font-size: 10px;"></i>
+
+<p style="font-size:12px ;display: inline-block; color: gray; margin-top:-10%;">4.37 • 4.9 L+ Learners</p> <br>
+<a href="" style="text-decoration: none; font-size: 14px;">Free</a> 
+<p style="font-size:14px; color:red; display: inline-block; margin-left: 45%;">Enroll now</p>
+<i class="fa-solid fa-chevron-right text-primary ms-1"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mt-3">
+        <div class="card" style="width: 15rem;">
+          <img src="./../../assets/course-835-ux.jpg" style="height: 140px;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <img style="height: 12px; width:12px;"  src="./../../assets/progress level.png" alt="">
+            <p style="display: inline-block;font-size: 12px;">Beginner</p>
+            <i class="fa-regular fa-clock text-secondary " style="margin-left:40%; font-size: 10px;"></i>
+<p style="color: gray; font-size:11px; display: inline-block;">&nbsp;4.5 Hrs</p>
+<h6>UI/UX for beginners</h6>
+<i class="fa-solid fa-star text-warning" style="font-size: 10px;"></i>
+
+<p style="font-size:12px ;display: inline-block; color: gray; margin-top:-10%;">4.52 • 76.8K + Learners</p> <br>
+<a href="" style="text-decoration: none; font-size: 14px;">Free</a> 
+<p style="font-size:14px; color:red; display: inline-block; margin-left: 45%;">Enroll now</p>
+<i class="fa-solid fa-chevron-right text-primary ms-1"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <section>
+
+       
+<div class="remove">
+         <a href=""><img src="./../../assets/background.webp"    alt=""></a>
+         <img class="gif" src="./../../assets/gift box shaking.gif"  alt="">
+         <h4 class="heading-3">Refer and earn a <span class="text-primary">premeium course worth <br> ₹ 15,000 /</span> </h4>
+         <button id="btn2" class="btn btn-primary">GET STARTED</button>
+         <br>
+
+</div> </section>
+         <br>
+<section>
+  <h5 class="heading-4">Select a Career path and power ahead</h5>
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-lg-2 col-sm-6">
+        <a href="" style="text-decoration: none; color: gray;">Popular Courses</a>
+      </div>
+      <div class="col-lg-2 col-sm-6"><a href="" style="text-decoration: none; color: gray;">IT &Software</a></div>
+      <div class="col-lg-2 col-sm-6"><a href="" style="text-decoration: none; color: gray;">Data Science</a></div>
+      <div class="col-lg-2 col-sm-6"><a href="" style="text-decoration: none; color: gray;">Digital Marketing</a></div>
+      <div class="col-lg-2 col-sm-6"><a href="" style="text-decoration: none; color: gray;">Machine-Learning</a></div>
+      <div class="col-lg-2 col-sm-6"><a href="" style="text-decoration: none; color: gray;">Many more</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="mt-4">
+<div class="row">
+  <div class="col-lg-6 col-sm-12 ">
+    <div class="card"  id="cards" >
+      <div class="card-body">
+        <h6 style="font-size:14px;" class="card-title text-secondary">DATA SCIENCE</h6>
+        <p class="card-text" id="p2">Data Scientist</p>
+        <img src="./../../assets/dataSCiences.png" class="img3"  alt="">
+        <p class="font-size:12px;">₹<b>7L+</b> Average Salary </p>
+
+      </div>
+    </div>
+  
+  </div>
+  <div class="col-lg-6 col-sm-12">
+    <div class="card" id="cards" >
+      <div class="card-body">
+        <h6 style="font-size:14px;" class="card-title text-secondary">ARTIFICIAL INTELLIGENCE</h6>
+        <p class="card-text" id="p2"> AI Engineer</p>
+        <img src="./../../assets/machinelearning.jpeg"  style="width:120px;" class="img3"  alt=""> 
+        <p class="font-size:12px;">₹<b>8L+</b> Average Salary </p>
+
+        
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-lg-6 col-sm-12">
+    <div class="card"  id="cards" >
+      <div class="card-body">
+        <h6 style="font-size:14px;" class="card-title text-secondary">DIGITAL MARKETING</h6>
+        <p class="card-text" id="p2">Digital Marketer</p>
+        <img src="./../../assets/digital marketing.jpg" class="img3"  alt="">
+        <p class="font-size:12px;">₹<b>12.1L+</b> Learners </p>
+
+      </div>
+    </div>
+  
+  </div>
+  <div class="col-lg-6 col-sm-12">
+    <div class="card" id="cards"  >
+      <div class="card-body">
+        <h6 style="font-size:14px;" class="card-title text-secondary">IT & SOFTWARE</h6>
+        <p class="card-text" id="p2"> Software Developer</p>
+        <img src="./../../assets/Software developer.png" style="width:120px;" class="img3"  alt=""> 
+        <p class="font-size:12px;">₹<b>6.5L+</b> Average Salary </p>
+
+        
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<h5 class="mt-5" style="text-align: center;">Popular Topics To Explore</h5>
+
+
+</section>
+
+<section>
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-lg-3 col-sm-12 mt-3">
+        <div class="card" style="width: 11rem;">
+          <img id="img4" src="./../../assets/bg1.png" class="card-img-top" alt="...">
+          <a href="" class="link1">Microsoft Excel</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-12 mt-3" >
+        <div class="card" style="width: 11rem;">
+          <img id="img4" src="./../../assets/bg-2.png" class="card-img-top" alt="...">
+          <a href="" class="link1">AWS</a>
+        </div>
+
+      </div>
+      <div class="col-lg-3 col-sm-12 mt-3">
+        <div class="card" style="width: 11rem;">
+          <img id="img4" src="./../../assets/bg-3.png" class="card-img-top" alt="...">
+          <a href="" class="link1">Python</a>
+        </div>
+
+      </div>
+      <div class="col-lg-3 col-sm-12 mt-3">
+        <div class="card" style="width: 11rem;">
+          <img id="img4" src="./../../assets/bg-4.png" class="card-img-top" alt="...">
+          <a href="" class="link1">Java</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-lg-3 col-sm-12 mt-3">
+        <div class="card" style="width: 11rem;">
+          <img id="img4" src="./../../assets/bg-5.png" class="card-img-top" alt="...">
+          <a href="" class="link1">Web Design</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-12 mt-3" >
+        <div class="card" style="width: 11rem;">
+          <img id="img4" src="./../../assets/bg1.png" class="card-img-top" alt="...">
+          <a href="" class="link1">Web Dev</a>
+        </div>
+
+      </div>
+      <div class="col-lg-3 col-sm-12 mt-3">
+        <div class="card" style="width: 11rem;">
+          <img id="img4" src="./../../assets/bg-2.png" class="card-img-top" alt="...">
+          <a href="" class="link1">SQL</a>
+        </div>
+
+      </div>
+      <div class="col-lg-3 col-sm-12 mt-3">
+        <div class="card" style="width: 11rem;">
+          <img id="img4" src="./../../assets/bg-3.png" class="card-img-top" alt="...">
+          <a href="" class="link1">UX Design</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</section>
+<br> <br>
+
+<section class="bg-light">
+  <p class="p4" style="padding-left: 10px;padding-top: 20px;">60L + Learners</p>
+  <h6 style="padding-left: 10px;">Stories Of Success</h6>
+  <p style="font-size: 12px; color: gray;padding-left: 10px;">Can Great Learning Academy Courses help  your career? Our Learners telll us now ! </p>
+<div class="container bg-light">
+  <div class="row">
+    <div class="col-lg-3 col-sm-12 mt-3">
+      <div class="card mr-2" style="width: 15rem;">
+        <div class="card-body">
+          <h3 class="heading5"> " It was an innovative course which has revamped the leadership approach. "</h3>
+          <img src="./../../assets/akhil.webp" class="img5" alt="">
+          <p class="p6">Akhil Biyyali</p>
+          <p class="p6"  style="margin-top: -27px;color: #196ae5; font-weight: bold;">Audit Senior Assistant I</p>
+          <p class="p6" style="margin-top: -9px;color: #196ae5; font-weight: bold;">Deolitte India</p><br><br>
+<img class="img6" src="./../../assets/deloiitte logo.png" alt="">
+<img src="./../../assets/linkedinicon.png" class="img7" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12 mt-3">
+      <div class="card mr-2" style="width: 15rem;">
+        <div class="card-body">
+          <h3 class="heading5"> " Thankyou Great Learning Academy For providing such an interesting couurse."</h3>
+          <img src="./../../assets/anuj.webp" class="img5" alt="">
+          <p class="p6">Anuj Biswas</p>
+          <!-- <p class="p6"  style="margin-top: 20px;color: #196ae5; font-weight: bold; margin-right:-33px;">Student</p> -->
+          <p class="p6" style="margin-top: 23px; color: #196ae5; font-weight: bold; margin-right:-69px;">IIT Madras</p><br><br>
+
+<img class="img6" src="./../../assets/iit.jpeg" alt="">
+<img src="./../../assets/linkedinicon.png" class="img7" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12 mt-3">
+      <div class="card mr-2" style="width: 15rem;">
+        <div class="card-body">
+          <h3 class="heading5"> "The introduction to corporate finance from #great learning academy ripens.  "</h3>
+          <img src="./../../assets/duvurru.webp" class="img5" alt="">
+          <p class="p6">Duvvurru Raj</p>
+          <p class="p6" style="margin-top: 23px; color: #196ae5; font-weight: bold; margin-right:-69px;">Founder</p><br><br>
+          <!-- <p class="p6" style="margin-top: -9px;color: #196ae5; font-weight: bold;">Deolitte India</p><br><br> -->
+<img class="img6" src="./../../assets/vivalyf.png" alt="">
+<img src="./../../assets/linkedinicon.png" class="img7" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12 mt-3">
+      <div class="card mr-2" style="width: 15rem;">
+        <div class="card-body">
+          <h3 class="heading5"> " All thanks to great leraning academy for providing such a valuable stuff. "</h3>
+          <img src="./../../assets/laksmi.webp" class="img5" alt="">
+          <p class="p6">Lakshmi Tuggule</p>
+          <p class="p6" style="margin-top: 23px; color: #196ae5; font-weight: bold; margin-right:-69px;">Student</p><br><br>
+<img class="img6" src="./../../assets/ips.jpeg" alt="">
+<img src="./../../assets/linkedinicon.png" class="img7" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<br><br>
+<p id="para" >An 1000+ more</p>
+<div class="container" id="remove">
+  <div class="row">
+    <div class="col-12">
+      <div style="width:80%;height:123px; position: absolute; background-color: #196ae5;">
+        <img src="./../../assets/background2.png"  alt="" style=" width:29%;position: relative;">
+        <h5 class="heading7">Ready To Learn</h5>
+        <button class="btn btn-white" style="padding:10px;background-color: white; color: #196ae5; float: right; margin-top: -38px; margin-right: 33%;">START NOW</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section  id="last">
+<h5 class="text-center" >Frequently Asked Questions</h5>
+
+<div class="accordion mt-5" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <p style="color: black;">What is Great Learning Academy?</p>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>The Great Learning Academy is an initiative taken by Great Learning, where we offer 1000+ free online courses in cutting-edge technologies and have successfully enrolled a whopping 5 Million+ learners across all domains. Great Learning Academy covers courses on Data Science, Machine Learning, Artificial Intelligence, Cloud Computing, Software Development, Sales and Business Development, Digital Marketing, Big Data, and many more</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+       Why should I choose Great Learning Academy with free Courses ?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>The Great Learning Academy is an initiative taken by Great Learning, where we offer 1000+ free online courses in cutting-edge technologies and have successfully enrolled a whopping 5 Million+ learners across all domains. Great Learning Academy covers courses on Data Science, Machine Learning, Artificial Intelligence, Cloud Computing, Software Development, Sales and Business Development, Digital Marketing, Big Data, and many more</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+       How many courses can I enroll at the same time?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>You can simultaneously enroll in multiple courses at Great Learning Academy.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+       How many course completion certificate can I get?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <p>There is no limit, and you will get course completion certificates for all the courses that you complete.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+     Is there is any time duration for completing the free courses with certificates?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+<p>No, all the free courses by Great Learning Academy are self-paced, and you can complete them at your convenience. But we recommend that you prepare a schedule for doing these courses so that you complete them on time.</p>    
+  </div>
+    </div>
+  </div>
+
+  <br> <br>
+
+
+
+
+
+</div>
+<p style="text-align: center;">For any enquiry please contact us at &nbsp;&nbsp;<a href="" style="text-decoration:none;">academy@greatlearning.in </a></p>
+<h5 class="text-center">Great Learning Academy</h5>
+<p style="font-size: 14px;">Great Learning Academy - What do we offer?</p>
+<p style="font-size: 12px; color: gray;">Great Learning is India’s leading professional learning platform, with a mission to make professionals proficient and future-ready. Great Learning Academy, an initiative taken by Great Learning to provide free online courses in various domains, enables professionals and students to learn the most in-demand skills to help them achieve career success</p>
+</section>
+
+

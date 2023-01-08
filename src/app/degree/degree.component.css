@@ -1,0 +1,28 @@
+.heading1{
+    margin-left: 62px;
+    margin-top: -7%;
+    line-height: 22px;
+}
+.e1{
+   margin-left: 62px;
+}
+.img2{
+    height:  489px
+}
+.img1{
+    width: 150px;
+     height:150px;
+}
+@media(max-width:700px){
+    .img2{
+        display: none;
+    }
+    .degreeside{
+        width:100%;
+    }
+    .img1{
+        width: 80px;
+        height: 100px;
+        margin-left: 20%;
+    }
+}

@@ -1,0 +1,39 @@
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <img src="./../../assets/modal2.png" class="img1" alt="">
+                <h4 class="heading1">  Get free access to </h4>
+                <h4 class="heading2">Live sessions to 100+ industries</h4>
+            </div>
+
+            <div class="col-lg-6 col-sm-12" id="signup">
+<form [formGroup]="signupform">
+                    <h1 class="heading3">Sign up</h1>
+    
+                        <div class="login-side">
+                            <h6><img src="./../../assets/google.png" style="width: 40px; height:30px; margin: 5px;border-radius: 10px; margin-right: 20px;" alt=""></h6>
+                            <p class="para">SIGN UP WITH GOOGLE</p>
+                        </div>
+                        <pre class="heading4">----  Or  -----</pre>
+    
+                        <input type="text" formControlName="mail" name="text" class="input-border text-secondary" placeholder=" Sign up with email address">
+                        <div *ngIf="this.signupform.get('mail')?.errors &&  this.signupform.get('mail')?.touched"><p class="text-danger">Invalid email address</p></div>
+
+                        <input type="password" formControlName="psd" name="number" class="input-border text-secondary mt-2" placeholder=" Password">
+                        <div *ngIf="this.signupform.get('psd')?.errors &&  this.signupform.get('psd')?.touched"><p class="text-danger">Invalid Password</p></div>
+<br> 
+                        <!-- <div class="login-sides" style="margin-top: 15px;"> -->
+                       <!-- <a (click)="signup()" routerLink="new" ><p class="text-center p-2 text-white  fs-6" style="font-weight: bold;">CONTINUE</p></a> -->
+<div class="text-center">
+                           <button (click)="signup()" class="btn btn-primary mt-3 ">CONTINUE</button>
+
+</div>                         <p style="font-size: 12px;text-align: center;">Have an account? <a href="" style="text-decoration: none;"> &nbsp;Log in</a></p>
+                        
+                         <p style="font-size: 12px;text-align: center; color: gray;">By signing up/login you agree to our terms and conditions · Privacy policy</p>
+                           <!-- </div> -->
+
+</form>           
+ </div>
+    </div>
